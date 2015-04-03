@@ -104,10 +104,10 @@ void Starlight::Countem()
 				temp=(Board[a-1][b]+Board[a+1][b]+Board[a][b-1]+Board[a][b])-(48*4);
 
 			else
-				temp=(Board[a][b]+Board[a-1][b]+Board[a+1][b]+Board[a][b+1]+Board[a][b-1])-(48*5);
+				int temp=(Board[a][b]+Board[a-1][b]+Board[a+1][b]+Board[a][b+1]+Board[a][b-1])-(48*5);
 
 				
-			if(temp/5>4)
+			if(temp/5>2)
 			{
 				Board[a][b]='*';
 				numstars++;
